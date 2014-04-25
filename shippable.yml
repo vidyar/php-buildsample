@@ -3,7 +3,7 @@ language: php
 php: 
   - 5.4 
 env:
-  - php=yes
+  - php=5.x
   
 before_script: 
   - mkdir -p shippable/codecoverage
@@ -20,7 +20,7 @@ notifications:
    email: false
 
 before_install:
-   - if [[php==yes]]; then
+   - if [[$php==5.x]]; then
    -  sudo apt-get install php5-xdebug;
    - fi
 
