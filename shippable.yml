@@ -4,7 +4,7 @@ php:
   - 5.4 
 env:
   - PHP=php
-  - phpver=5.x
+  - PHPver=5.x
 before_script: 
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
@@ -20,7 +20,7 @@ notifications:
    email: false
 
 before_install:
-   - if [[$phpver==5.x]]; then
+   - if [[$PHPver==5.x]]; then
    -  sudo apt-get install php5-xdebug;
    - fi
 
