@@ -2,8 +2,7 @@ language: php
 
 php: 
   - 5.4 
-env:
-  - php=5.4
+
   
 before_script: 
   - mkdir -p shippable/codecoverage
