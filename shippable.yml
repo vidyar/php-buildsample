@@ -17,7 +17,7 @@ notifications:
    email: false
 
 before_install:
-   - if [["php"== "5.4"]]; then
+   - if [[$php== "5.4"]]; then
    -  sudo apt-get install php5-xdebug;
    - fi
 
