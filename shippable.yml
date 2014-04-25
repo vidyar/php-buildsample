@@ -9,7 +9,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 
-#install: sudo apt-get install php5-xdebug
+install: sudo apt-get install php5-xdebug
 
 script:
    #- sudo apt-get install php5-xdebug
@@ -19,8 +19,8 @@ script:
 notifications:
    email: false
 
-before_install:
-   - if [[$php=="5.4"]]; then
-   -  sudo apt-get install php5-xdebug;
-   - fi
+#before_install:
+#   - if [[$php=="5.4"]]; then
+#   -  sudo apt-get install php5-xdebug;
+#   - fi
 
