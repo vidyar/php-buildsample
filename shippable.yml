@@ -19,4 +19,4 @@ script:
 notifications:
    email: 
      - vidyac.raghav@gmail.com
-
+     - vidyatest@hotmail.com
