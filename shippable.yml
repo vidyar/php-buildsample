@@ -10,14 +10,14 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 
-install: sudo apt-get install php5-xdebug
+#install: sudo apt-get install php5-xdebug
 
 script:
    #- sudo apt-get install php5-xdebug
    - php -v
    - phpunit  --log-junit shippable/testresults/junit.xml tests/calculator_test.php
    - phpunit --coverage-xml  shippable/codecoverage/ tests/calculator_test.php
-  
+   #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 notifications:
    email: 
      - vidya@shippable.com
