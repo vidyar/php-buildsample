@@ -6,7 +6,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 #install: sudo apt-get install php5-xdebug
-script
+script:
    #- sudo apt-get install php5-xdebug
    - php -v
    - phpunit  --log-junit shippable/testresults/junit.xml tests
