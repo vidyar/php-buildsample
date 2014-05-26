@@ -1,2 +1,2 @@
 
-[![Build Status](https://api.shippable.com/projects/537ddccd86eb512b005a7572/badge/master)](https://www.shippable.com/projects/537ddccd86eb512b005a7572/builds/4)
+[![Build Status](https://apibeta.shippable.com/projects/53833f8e689ec911003be532/badge/develop)](https://beta.shippable.com/projects/53833f8e689ec911003be532)
