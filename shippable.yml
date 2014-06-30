@@ -12,13 +12,13 @@ before_script:
 
 script:
      # phpunit tests/calculator_test.php
-     - phpunit  --log-junit vidyar/testresults/junit.xml 
+     - phpunit  --log-junit shippable/testresults/junit.xml 
 
 install: true
 #script: true 
 before_archive:
        - ls
-       - mv   vidyar/testresults/junit.xml shippable/testresults/junit.xml
+       - mv   shippable/testresults/junit.xml shippable/tests
       #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
       
