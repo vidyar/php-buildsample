@@ -8,17 +8,15 @@ php:
 before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
-  - mkdir -p vidyar/testresults
+  - mkdir -p shippable/src
 
 script:
-     # phpunit tests/calculator_test.php
-     - phpunit  --log-junit shippable/testresults/junit.xml 
-
+     - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 install: true
 #script: true 
 before_archive:
        - ls
-       - mv   shippable/testresults/junit.xml shippable/tests
+       - mv   php-buildsample/src shippable/src
       #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
       
