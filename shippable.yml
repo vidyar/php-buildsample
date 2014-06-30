@@ -15,5 +15,4 @@ before_archive:
       - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
       - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
-      - echo $SHIPPABLE_ARTIFACTS_URL
-      - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
+    
