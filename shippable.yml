@@ -16,7 +16,7 @@ install: true
 #script: true 
 before_archive:
        - ls
-       - mv   php-buildsample/calculator.php  shippable/src
+       - mv  calculator.php  shippable/src
       #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
       
