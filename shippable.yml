@@ -1,6 +1,3 @@
-
-
-
 language: php
 php:
   - 5.5
@@ -17,10 +14,7 @@ install: true
 before_archive:
        - ls
        - mv  calculator.php  shippable/src
-      #- phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 after_archive:
-      
-      - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
       - echo $SHIPPABLE_ARTIFACTS_URL
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
 
