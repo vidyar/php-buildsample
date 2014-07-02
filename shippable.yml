@@ -1,4 +1,5 @@
 language: php
+
 php:
   - 5.5
   #- 5.4
@@ -13,10 +14,13 @@ install: true
 #script: true 
 before_archive:
        - ls
-       - mv  calculator.php  shippable/src
+       - mv  tests/calculatot_test.php  shippable/src
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
 
 
 
+branches:
+  only:
+    - master
