@@ -20,7 +20,8 @@ after_archive:
 
 
 notifications:
-  email: vidya@shippable.com
-  
-    on_success: change
-    on_failure: always
+  email: 
+   recipients:
+      - vidya@shippable.com
+   on_success: change
+   on_failure: always
