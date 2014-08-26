@@ -19,4 +19,8 @@ after_archive:
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
 
 
-
+notifications:
+  email: vidya@shippable.com
+  
+    on_success: change
+    on_failure: always
