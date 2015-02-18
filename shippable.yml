@@ -22,6 +22,7 @@ install: true
 before_archive:
        - ls
        - mv  calculator.php  shippable/src
+
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
@@ -34,3 +35,4 @@ notifications:
       - vidya@shippable.com
    on_success: always
    on_failure: always
+#test
