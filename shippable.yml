@@ -17,7 +17,7 @@ script:
 install: true
 
 #script: true 
-before_archive:
+after_success:
        - ls
        - mv  calculator.php  shippable/src
 after_archive:
