@@ -23,6 +23,7 @@ after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
 
+archive: true
 
 notifications:
   email: 
