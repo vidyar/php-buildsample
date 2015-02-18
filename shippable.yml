@@ -16,6 +16,7 @@ before_script:
 
 script:
   - echo $BUILD_NUMBER
+  - echo $BUILD_URL
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 install: true
 #script: true 
