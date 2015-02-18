@@ -7,7 +7,7 @@ class CalculatorTest extends PHPUnit_Framework_TestCase{
   //were expecting
   public function testAdd(){
       $calc = new Calculator();
-      $sum = $calc->add(array(2,3,4,5));
+      $sum = $calc->add(array(2,3,4,6));
       $this->assertEquals(14, $sum); //check if 2+3+4+5 is equal to 14
   }
 
