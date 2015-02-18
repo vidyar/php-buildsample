@@ -13,11 +13,14 @@ before_script:
 
 script:
      - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
+
 install: true
 #script: true 
+
 before_archive:
        - ls
        - mv  calculator.php  shippable/src
+       - mv README.md shippable/
 after_archive:
       - echo $SHIPPABLE_ARTIFACTS_URL
       - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
