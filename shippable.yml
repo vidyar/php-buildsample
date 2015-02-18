@@ -18,7 +18,7 @@ script:
      - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 install: true
 #script: true 
-before_archive:
+after_success:
        - ls
        - mv  calculator.php  shippable/src
 after_archive:
