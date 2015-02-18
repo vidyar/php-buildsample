@@ -10,6 +10,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
   - mkdir -p shippable/src
+  - php --version
 
 script:
      - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
