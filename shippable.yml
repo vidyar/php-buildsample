@@ -13,6 +13,7 @@ before_script:
   - mkdir -p shippable/src
   - echo $BRANCH
   - echo $BUILD_URL
+  - ifconfig
 
 script:
      - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
