@@ -5,6 +5,7 @@ php:
 before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
+  - echo "extension = xdebug.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 #install: sudo apt-get install php5-xdebug
 script:
    #- sudo apt-get install php5-xdebug
