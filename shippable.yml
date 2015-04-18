@@ -20,7 +20,7 @@ script:
 install: true
 
 #script: true 
-before_archive:
+after_success:
        - ls
        - mv  calculator.php  shippable/src
 after_archive:
@@ -35,3 +35,4 @@ notifications:
       - vidyac.raghav@gmail.com
    on_success: change
    on_failure: always
+#test
